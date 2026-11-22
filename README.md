@@ -1,12 +1,12 @@
-# Schedulr – Scheduling Platform (Cal.com Clone)
+# Schedulr – Scheduling Platform
 
-A full-featured scheduling/booking web application built as a Cal.com clone for the SDE Intern Full-Stack Assignment.
+Schedulr is a full-stack scheduling and booking web app built by me, Ritesh Routray. Hosts define event types and weekly availability, and guests book open time slots from a public page. The UI is inspired by Cal.com.
 
 ---
 
 ## Live Demo
 
-> Deploy to Vercel (see deployment section below) and paste your URL here.
+> Not deployed yet. See the deployment section below to host your own copy.
 
 ---
 
@@ -42,7 +42,7 @@ A full-featured scheduling/booking web application built as a Cal.com clone for 
 
 - Responsive design (mobile, tablet, desktop)
 - Date override schema in DB (ready for implementation)
-- Cal.com-inspired UI: dark sidebar, color-coded event cards, branded calendar
+- Clean dashboard UI: dark sidebar, color-coded event cards, branded calendar
 - Booking conflict detection (prevents double booking)
 - Status badges (Confirmed / Cancelled / Completed)
 - Copy booking link to clipboard
@@ -122,8 +122,8 @@ EventType ────────────────── 1:N ───�
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/your-username/calcom-clone.git
-cd calcom-clone
+git clone https://github.com/Ritesh-Routray/scheduling_platform.git
+cd scheduling_platform
 npm install
 ```
 
@@ -136,14 +136,14 @@ cp .env.example .env
 Edit `.env` and update `DATABASE_URL`:
 
 ```env
-DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/calcom_clone"
+DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/schedulr"
 ```
 
 ### 3. Set Up Database
 
 ```bash
 # Create the database (in psql or pgAdmin)
-createdb calcom_clone
+createdb schedulr
 
 # Generate Prisma client
 npm run db:generate
@@ -280,4 +280,4 @@ git add -A && git commit -m "Initial implementation" && git push
 
 ## Author
 
-Built for the SDE Intern Full-Stack Assignment.
+Built by [Ritesh Routray](https://github.com/Ritesh-Routray).
